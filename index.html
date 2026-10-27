@@ -4,18 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NANKAY - Arte en Cemento y Decoración</title>
-    
-    <!-- Bootstrap 5 CSS -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* 3 columnas en PC*/
+        @media (min-width: 992px) {
+            .productos-desktop-grid {
+                flex: 0 0 auto;
+                width: 33.33333333%;
+            }
+        }
+
+        /* Mapa + Formulario: 2 columnas*/
+        @media (min-width: 768px) {
+            .fila-mapa-form {
+                flex: 0 0 auto;
+                width: 50%;
+            }
+        }
+    </style>
 </head>
 
 <body class="py-4" style="background-color: #F2F9F6;">
 
     <div class="container" style="max-width: 1080px;">
 
-        <!-- ================= 1. HEADER ================= -->
+<!--HEADER-->
         <header class="border rounded-4 p-4 mb-4" style="background-color: #E1F3EC; border-color: #CBEADF !important; box-shadow: 0 8px 24px rgba(36, 130, 119, 0.04);">
             <div class="row align-items-center g-3">
                 <div class="col-4 col-md-3 text-center text-md-start">
@@ -32,22 +48,20 @@
             </div>
         </header>
 
-        <!-- ================= 2. BANNER ================= -->
+<!--BANNER -->
         <section class="border rounded-4 p-2 mb-4 overflow-hidden" style="background-color: #D6EEE4; border-color: #BDDFD2 !important; box-shadow: 0 8px 24px rgba(36, 130, 119, 0.04);">
             <img src="imagenes/imagenesreferencias.png" 
                  onerror="this.onerror=null; this.src='https://placehold.co/1200x400/248277/FFFFFF?text=Banner+NANKAY';" 
                  alt="Banner de NANKAY" 
                  class="img-fluid rounded-3 w-100" style="max-height: 380px; object-fit: cover;">
         </section>
-
-        <!-- ================= 3. NUESTROS PRODUCTOS Y SERVICIOS ================= -->
+<!--BODY-->
         <section class="border rounded-4 p-4 mb-4" style="background-color: #E9F6F0; border-color: #D3ECE0 !important; box-shadow: 0 8px 24px rgba(36, 130, 119, 0.04);">
             <h2 class="h3 fw-bold border-bottom pb-2 mb-4" style="color: #14746F; border-color: #BDDFD2 !important;">Nuestros Productos</h2>
 
             <div class="row g-4">
-                
-                <!-- 1. Macetas Decorativas -->
-                <div class="col-12 col-md-6">
+<!--Macetas Decorativas -->
+                <div class="col-12 col-md-6 productos-desktop-grid">
                     <div class="p-3 border rounded-4 h-100 d-flex align-items-center justify-content-between bg-white" style="border-color: #E3F2EC !important; box-shadow: 0 4px 15px rgba(20, 116, 111, 0.03);">
                         <div>
                             <h4 class="h5 fw-bold text-dark mb-1">Macetas Decorativas</h4>
@@ -59,9 +73,8 @@
                              style="width: 90px; height: 90px; object-fit: cover;">
                     </div>
                 </div>
-
-                <!-- 2. Velas Artesanales -->
-                <div class="col-12 col-md-6">
+<!--Velas Artesanales -->
+                <div class="col-12 col-md-6 productos-desktop-grid">
                     <div class="p-3 border rounded-4 h-100 d-flex align-items-center justify-content-between bg-white" style="border-color: #E3F2EC !important; box-shadow: 0 4px 15px rgba(20, 116, 111, 0.03);">
                         <img src="imagenes/velas.jpeg" 
                              onerror="this.onerror=null; this.src='https://placehold.co/100x100/248277/FFFFFF?text=Velas';" 
@@ -73,12 +86,11 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- 3. Recuerdos de Bodas y Cumpleaños -->
-                <div class="col-12 col-md-6">
+<!--Recuerdos de Bodas y Cumpleaños -->
+                <div class="col-12 col-md-6 productos-desktop-grid">
                     <div class="p-3 border rounded-4 h-100 d-flex align-items-center justify-content-between bg-white" style="border-color: #E3F2EC !important; box-shadow: 0 4px 15px rgba(20, 116, 111, 0.03);">
                         <div>
-                            <h4 class="h5 fw-bold text-dark mb-1">Recuerdos de Bodas y Cumpleaños</h4>
+                            <h4 class="h5 fw-bold text-dark mb-1">Recuerdos para Bodas y Cumpleaños</h4>
                         </div>
                         <img src="imagenes/recuerdos.jpeg" 
                              onerror="this.onerror=null; this.src='https://placehold.co/100x100/248277/FFFFFF?text=Recuerdos';" 
@@ -87,9 +99,8 @@
                              style="width: 90px; height: 90px; object-fit: cover;">
                     </div>
                 </div>
-
-                <!-- 4. Detalles Corporativos -->
-                <div class="col-12 col-md-6">
+<!--Detalles Corporativos -->
+                <div class="col-12 col-md-6 productos-desktop-grid">
                     <div class="p-3 border rounded-4 h-100 d-flex align-items-center justify-content-between bg-white" style="border-color: #E3F2EC !important; box-shadow: 0 4px 15px rgba(20, 116, 111, 0.03);">
                         <img src="imagenes/recuerdos_cor.jpeg" 
                              onerror="this.onerror=null; this.src='https://placehold.co/100x100/248277/FFFFFF?text=Corporativos';" 
@@ -101,9 +112,8 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- 5. Mini Jardines -->
-                <div class="col-12 col-md-6">
+<!-- Mini Jardines -->
+                <div class="col-12 col-md-6 productos-desktop-grid">
                     <div class="p-3 border rounded-4 h-100 d-flex align-items-center justify-content-between bg-white" style="border-color: #E3F2EC !important; box-shadow: 0 4px 15px rgba(20, 116, 111, 0.03);">
                         <div>
                             <h4 class="h5 fw-bold text-dark mb-1">Mini Jardines</h4>
@@ -115,20 +125,19 @@
                              style="width: 90px; height: 90px; object-fit: cover;">
                     </div>
                 </div>
-
-                <!-- 6. Lista de Servicios (Combobox / Select) -->
-                <div class="col-12 col-md-6">
+<!-- Lista de Servicios-->
+                <div class="col-12 col-md-6 productos-desktop-grid">
                     <div class="p-3 border rounded-4 h-100 d-flex flex-column justify-content-center bg-white" style="border-color: #E3F2EC !important; box-shadow: 0 4px 15px rgba(20, 116, 111, 0.03);">
                         <label for="comboboxServicios" class="h5 fw-bold mb-2" style="color: #14746F;">
                             <i class="fa-solid fa-list-check me-2"></i>Lista de Servicios
                         </label>
-                        <p class="small text-muted mb-3">Selecciona un servicio para conocer nuestras opciones:</p>
+                        <p class="small text-muted mb-3">Selecciona un servicio:</p>
                         <select class="form-select border-0 bg-light shadow-sm" id="comboboxServicios" style="background-color: #F2F9F6 !important;">
                             <option value="" selected disabled>-- Ver lista de servicios --</option>
-                            <option value="1">Macetas artesanales en cemento</option>
-                            <option value="2">Suculentas y plantas seleccionadas</option>
-                            <option value="3">Recuerdos para eventos especiales</option>
-                            <option value="4">Diseños personalizados por pedido</option>
+                            <option value="1">PRODUCTO A</option>
+                            <option value="2">PRODUCTO B</option>
+                            <option value="3">PRODUCTO C</option>
+                            <option value="4">PRODUCTO D</option>
                         </select>
                     </div>
                 </div>
@@ -136,93 +145,86 @@
             </div>
         </section>
 
-        <!-- ================= 4. GOOGLE MAPS & UBICACIÓN ================= -->
         <section class="border rounded-4 p-4 mb-4" style="background-color: #E1F3EC; border-color: #CBEADF !important; box-shadow: 0 8px 24px rgba(36, 130, 119, 0.04);">
-            <div class="row align-items-center g-4">
-                <div class="col-12 col-lg-5">
-                    <h2 class="h3 fw-bold border-bottom pb-2 mb-3" style="color: #14746F; border-color: #BDDFD2 !important;">Visítanos</h2>
-                    <h5 class="fw-semibold text-dark">Estamos aquí para crear algo especial para ti.</h5>
-                    <p class="text-muted">
-                        ¡Nos encantará conocerte! Visítanos y descubre nuestras creaciones artesanales. Encuentra nuestra ubicación en el mapa.
-                    </p>
-                    <div class="p-3 rounded-3 border-start border-4 small bg-white shadow-sm" style="border-color: #248277 !important;">
-                        <strong>NANKAY:</strong> pequeños detalles, grandes emociones.
+            <div class="row g-4 align-items-stretch">
+<!-- Google Maps -->
+                <div class="col-12 fila-mapa-form d-flex flex-column justify-content-between">
+                    <div>
+                        <h2 class="h3 fw-bold border-bottom pb-2 mb-3" style="color: #14746F; border-color: #BDDFD2 !important;">Visítanos</h2>
+                        <h5 class="fw-semibold text-dark">Estamos aquí para crear algo especial para ti.</h5>
+                        <div class="p-3 rounded-3 border-start border-4 small bg-white shadow-sm mb-3" style="border-color: #248277 !important;">
+                            <strong>NANKAY:</strong> pequeños detalles, grandes emociones.
+                        </div>
+                    </div>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.3177719442842!2d-78.59667092550083!3d-0.9075877990836217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d461bd1d43a1bb%3A0x2e0b77284ded7ca6!2sNankay%20-%20Arte%20en%20cemento!5e0!3m2!1ses-419!2sec!4v1792603629685!5m2!1ses-419!2sec" 
+                                class="w-100 rounded-3 border-0 shadow-sm" 
+                                style="height: 260px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="strict-origin-when-cross-origin"></iframe>
                     </div>
                 </div>
-                <div class="col-12 col-lg-7">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.3177719442842!2d-78.59667092550083!3d-0.9075877990836217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d461bd1d43a1bb%3A0x2e0b77284ded7ca6!2sNankay%20-%20Arte%20en%20cemento!5e0!3m2!1ses-419!2sec!4v1792603629685!5m2!1ses-419!2sec" 
-                            class="w-100 rounded-3 border-0 shadow-sm" 
-                            style="height: 320px;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="strict-origin-when-cross-origin"></iframe>
-                </div>
-            </div>
-        </section>
+<!-- FORMULARIO -->
+                <div class="col-12 fila-mapa-form d-flex flex-column justify-content-between">
+                    <div>
+                        <h2 class="h3 fw-bold border-bottom pb-2 mb-3" style="color: #14746F; border-color: #BDDFD2 !important;">Contáctanos</h2>
+                        <h5 class="fw-semibold text-dark">Estamos aquí para ayudarte.</h5>
+                        <p class="text-muted small mb-2">
+                            Completa el formulario y cuéntanos qué necesitas.
+                        </p>
+                    </div>
 
-        <!-- ================= 5. FORMULARIO DE CONTACTO ================= -->
-        <section class="border rounded-4 p-4 mb-4" style="background-color: #D6EEE4; border-color: #BDDFD2 !important; box-shadow: 0 8px 24px rgba(36, 130, 119, 0.04);">
-            <div class="row g-4 align-items-center">
-                <div class="col-12 col-lg-5">
-                    <h2 class="h3 fw-bold border-bottom pb-2 mb-3" style="color: #14746F; border-color: #A3D8C3 !important;">Contáctanos</h2>
-                    <h5 class="fw-semibold text-dark">Estamos aquí para ayudarte.</h5>
-                    <p class="text-muted">
-                        ¿Te gustaría conocer nuestros productos o realizar un pedido personalizado? Completa el formulario y cuéntanos qué necesitas.
-                    </p>
-                    <p class="text-muted mb-0">
-                        En NANKAY creamos detalles artesanales pensados para convertir tus ideas en algo especial.
-                    </p>
-                </div>
-
-                <div class="col-12 col-lg-7">
-                    <form action="#" method="post" id="contactForm" onsubmit="event.preventDefault(); showSuccessMessage();">
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label fw-semibold">Nombre completo</label>
-                            <input type="text" class="form-control bg-white border-0 shadow-sm" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
-                        </div>
-
-                        <div class="row g-3 mb-3">
-                            <div class="col-12 col-md-6">
-                                <label for="correo" class="form-label fw-semibold">Correo electrónico</label>
-                                <input type="email" class="form-control bg-white border-0 shadow-sm" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                    <div>
+                        <form action="#" method="post" id="contactForm" onsubmit="event.preventDefault(); showSuccessMessage();">
+                            <div class="mb-2">
+                                <label for="nombre" class="form-label fw-semibold small mb-1">Nombre completo</label>
+                                <input type="text" class="form-control form-control-sm bg-white border-0 shadow-sm" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
                             </div>
-                            <div class="col-12 col-md-6">
-                                <label for="telefono" class="form-label fw-semibold">Teléfono</label>
-                                <input type="tel" class="form-control bg-white border-0 shadow-sm" id="telefono" name="telefono" placeholder="Escribe tu número">
+
+                            <div class="row g-2 mb-2">
+                                <div class="col-12 col-md-6">
+                                    <label for="correo" class="form-label fw-semibold small mb-1">Correo electrónico</label>
+                                    <input type="email" class="form-control form-control-sm bg-white border-0 shadow-sm" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="telefono" class="form-label fw-semibold small mb-1">Teléfono</label>
+                                    <input type="tel" class="form-control form-control-sm bg-white border-0 shadow-sm" id="telefono" name="telefono" placeholder="Escribe tu número">
+                                </div>
                             </div>
+
+                            <div class="mb-2">
+                                <label for="producto" class="form-label fw-semibold small mb-1">¿Qué producto te interesa?</label>
+                                <select class="form-select form-select-sm bg-white border-0 shadow-sm" id="producto" name="producto" required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="macetas">Macetas</option>
+                                    <option value="velas">Velas</option>
+                                    <option value="minijardines">Mini jardines</option>
+                                    <option value="suculentas">Suculentas y plantas</option>
+                                    <option value="recuerdos">Recuerdos para eventos</option>
+                                    <option value="personalizados">Productos personalizados</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label fw-semibold small mb-1">Cuéntanos qué necesitas</label>
+                                <textarea class="form-control form-control-sm bg-white border-0 shadow-sm" id="mensaje" name="mensaje" rows="2" placeholder="Escribe tu consulta o pedido" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn w-100 rounded-pill py-2 fw-semibold text-white shadow" style="background-color: #248277;">
+                                <i class="fa-regular fa-paper-plane me-2"></i>Enviar mensaje
+                            </button>
+                        </form>
+
+                        <div id="feedbackMessage" class="alert alert-success mt-2 d-none rounded-3 shadow-sm py-2 small" role="alert">
+                            <i class="fa-solid fa-circle-check me-2"></i> ¡Gracias por contactar a NANKAY! Te responderemos muy pronto.
                         </div>
-
-                        <div class="mb-3">
-                            <label for="producto" class="form-label fw-semibold">¿Qué producto te interesa?</label>
-                            <select class="form-select bg-white border-0 shadow-sm" id="producto" name="producto" required>
-                                <option value="">Selecciona una opción</option>
-                                <option value="macetas">Macetas</option>
-                                <option value="velas">Velas</option>
-                                <option value="minijardines">Mini jardines</option>
-                                <option value="suculentas">Suculentas y plantas</option>
-                                <option value="recuerdos">Recuerdos para eventos</option>
-                                <option value="personalizados">Productos personalizados</option>
-                            </select>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="mensaje" class="form-label fw-semibold">Cuéntanos qué necesitas</label>
-                            <textarea class="form-control bg-white border-0 shadow-sm" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu consulta o pedido" required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn w-100 rounded-pill py-2 fw-semibold text-white shadow" style="background-color: #248277;">
-                            <i class="fa-regular fa-paper-plane me-2"></i>Enviar mensaje
-                        </button>
-                    </form>
-
-                    <div id="feedbackMessage" class="alert alert-success mt-3 d-none rounded-3 shadow-sm" role="alert">
-                        <i class="fa-solid fa-circle-check me-2"></i> ¡Gracias por contactar a NANKAY! Te responderemos muy pronto.
                     </div>
                 </div>
+
             </div>
         </section>
-
-        <!-- ================= 6. FOOTER Y REDES SOCIALES ================= -->
+<!--FOOTER Y REDES SOCIALES-->
         <footer class="border rounded-4 p-4 text-center text-white" style="background-color: #248277; border-color: #14746F !important; box-shadow: 0 8px 24px rgba(36, 130, 119, 0.1);">
             <h4 class="fw-bold mb-1">NANKAY</h4>
             <p class="small fst-italic mb-3" style="color: #99E2B4;">Tú imaginas, nosotros lo creamos.</p>
@@ -248,8 +250,6 @@
         </footer>
 
     </div>
-
-    <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         function showSuccessMessage() {
